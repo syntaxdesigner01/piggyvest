@@ -1,0 +1,20 @@
+@font-face {
+    font-family:'Eina-regular' ;
+    src: url('/public/fonts/Eina01-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Eina-bold' ;
+    src: url('/public/fonts/Eina01-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Eina-SemiBold' ;
+    src: url('/public/fonts/Eina01-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

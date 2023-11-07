@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.scroll-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .scroll-shadow.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
