@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section>
+    <section className=" px-20">
       {/* hero section */}
       <div className="flex  justify-between">
         <div className="w-[40%] pt-[6em]">

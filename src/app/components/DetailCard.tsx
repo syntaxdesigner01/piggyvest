@@ -28,7 +28,7 @@ const colorId:Array<string>= ["#0F60D6","#2295F2","#59CC8D","#E5489B","#59CC8D",
   return (
     <div className={`bg-white pt-10 px-10 rounded-3xl `}>
       <div className="text-left">
-        <h2 className="font-bold text-4xl">{title}</h2>
+        <h2 className={`font-bold text-4xl text-[${colorId[id]}] `}>{title}</h2>
         <p className="leading-relaxed text-xl w-[60%] pt-4">{description}</p>
       </div>
 
