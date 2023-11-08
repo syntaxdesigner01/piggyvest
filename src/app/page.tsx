@@ -161,7 +161,37 @@ function Home() {
 
 
       {/* success story */}
-      
+      <div className="px-20 flex justify-center gap-10 items-center font-EinaBold ">
+        <aside>
+          <Image src={'/asserts/successStory.png'} alt="" height={500} width={550}/>
+          {/* apple-logo-black.svg */}
+        </aside>
+        <aside className="">
+          <h1 className="font-bold w-[80%] text-3xl text-left">Join 4+ million people who save and invest with us</h1>
+
+          <div className="mt-8 flex  items-center gap-4">
+            <button className="flex justify-between items-center gap-3 border shadow-sm text-primary_text py-3 px-6 rounded-lg font-bold font-EinaRegular ">
+              <Image
+                src={"/asserts/apple-logo-black.svg"}
+                alt=""
+                width={20}
+                height={20}
+              />
+              <span>Get on iPhone</span>
+            </button>
+
+            <button className="flex justify-between items-center gap-3 border shadow-sm text-primary_text py-3 px-6 rounded-lg font-bold font-EinaRegular  ">
+              <Image
+                src={"/asserts/googleplay.png"}
+                alt=""
+                width={20}
+                height={20}
+              />
+              <span>Get on Android</span>
+            </button>
+          </div>
+        </aside>
+      </div>
       {/* success story end */}
     </main>
   );
