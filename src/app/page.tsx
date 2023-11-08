@@ -3,6 +3,7 @@ import "@/utils/font.css";
 import { BiSolidLock } from "react-icons/bi";
 import { BsArrowReturnRight } from "react-icons/bs";
 import HeroSection from "./components/HeroSection";
+import DetailCard from "./components/DetailCard";
 
 function Home() {
   return (
@@ -35,8 +36,27 @@ function Home() {
       </div>
       {/*  */}
 
+      <section className="pt-[10em] flex justify-between mb-10">
+        <div className="text-center flex flex-row justify-center pt-20">
+          <div className="w-[65%] text-center ">
+            <h1 className="text-5xl font-bold leading-snug  ">
+              5 ways to build your savings
+            </h1>
+            <div className="w-full flex justify-center items-center">
+              <p className="text-2xl w-[90%]   text-center py-4">
+                Earn 5%-15% when you save with any of these PiggyVest plans.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      
+        <DetailCard
+          title="Automated Savings"
+          description="Build a dedicated savings faster on your terms, automatically or manually."
+          imagePath="piggybankImage.avif"
+          cardName="Piggybank"
+        />
+      </section>
     </main>
   );
 }
