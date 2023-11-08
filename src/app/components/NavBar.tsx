@@ -8,7 +8,7 @@ export default function NavBar() {
 
   return (
 
-     <section className="bg-white fixed w-full shadow-lg py-4">
+     <section className=" fixed w-full  py-4">
        <nav
       className={` px-20  flex justify-between pt-4 font-EinaBold font-bold text-[18px]  `}
     >

@@ -18,9 +18,9 @@ const config: Config = {
         primary_text:'#3D4F60'
        } ,
        fontFamily:{
-        EinaRegular:['Eina-regular','sans'],
-        EinaBold:['Eina-bold','sans'],
-        EinaSemiBold:['Eina-SemiBold','sans'],
+        EinaRegular:['Eina-regular','sans-serif'],
+        EinaBold:['Eina-bold','sans-serif'],
+        EinaSemiBold:['Eina-SemiBold','sans-serif'],
        }
     },
   },
