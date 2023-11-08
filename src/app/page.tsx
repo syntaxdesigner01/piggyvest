@@ -6,6 +6,8 @@ import HeroSection from "./components/HeroSection";
 import DetailCard from "./components/DetailCard";
 
 function Home() {
+
+  
   return (
     <main className="pt-[14em] px-20 relative">
       <HeroSection />
@@ -55,6 +57,43 @@ function Home() {
           description="Build a dedicated savings faster on your terms, automatically or manually."
           imagePath="piggybankImage.avif"
           cardName="Piggybank"
+          id={0}
+        />
+      </section>
+
+      <section className="pt-[2em] flex justify-between items-center mb-10 gap-8">
+        <DetailCard
+          title="Fixed Savings"
+          description="Lock money away for a fixed duration without having access to it until maturity. It's like having a custom fixed deposit."
+          imagePath="fixedsavings.avif"
+          cardName="safelock"
+          id={1}
+        />
+
+        <DetailCard
+          title="Goal-oriented Savings "
+          description="Reach all your savings goals faster. Save towards multiple goals on your own or with a group."
+          imagePath="goalsavings.avif"
+          cardName="Target Savings"
+          id={2}
+        />
+      </section>
+
+      <section className="pt-[2em] flex justify-between items-center mb-10 gap-8">
+        <DetailCard
+          title="Flex Naira"
+          description="Save, transfer, manage, organise, and withdraw your money at any time.."
+          imagePath="flexnaira.avif"
+          cardName="Flex Naira"
+          id={3}
+        />
+
+        <DetailCard
+          title="Flex Dollar "
+          description="Save and grow your money in foreign currencies such as Dollars."
+          imagePath="flexdollar.avif"
+          cardName="Flex Dollar"
+          id={4}
         />
       </section>
     </main>
