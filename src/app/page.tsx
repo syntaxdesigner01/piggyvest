@@ -1,109 +1,42 @@
-import Image from "next/image";
 import "../app/globals.css";
+import "@/utils/font.css";
+import { BiSolidLock } from "react-icons/bi";
+import { BsArrowReturnRight } from "react-icons/bs";
+import HeroSection from "./components/HeroSection";
 
 function Home() {
   return (
-    <main className="pt-[14em] px-20">
+    <main className="pt-[14em] px-20 relative">
+      <HeroSection />
 
-      {/* hero section */}
-      <div className="flex  justify-between">
-        <div className="w-[40%] pt-[6em]">
-          <h1 className="font-extrabold text-5xl space-2 text-primary font-EinaBold  ">
-            The Better Way to Save & Invest
+      {/*  */}
+      <div className="flex items-center gap-10 w-[70%] pt-[10em] ">
+        <div className="bg-white  p-6 rounded-[30px]">
+          <BiSolidLock size="60px" />
+        </div>
+
+        <div>
+          <h1 className="font-[Eina-bold] text-primary font-bold text-3xl">
+            Your security is our priority
           </h1>
-          <p className="text-2xl font-extralight text-primary pt-10 font-200">
-            Piggyvest helps over 4 million customers achieve their financial
-            goals by helping them save and invest with ease.
+          <p className="py-6 leading-relaxed">
+            PiggyVest uses the highest level of Internet Security and it is
+            secured by 256 bits SSL security encryption to ensure that your
+            information is comepletely protected from fraud.
           </p>
 
-          <div className="mt-8 flex  items-center gap-4">
-            <button className="flex justify-between items-center gap-3 bg-primary text-white py-3 px-6 rounded-lg font-bold font-EinaRegular ">
-              <Image
-                src={"/asserts/applelogo.png"}
-                alt=""
-                width={20}
-                height={20}
-              />
-              <span>Get on iPhone</span>
-            </button>
-
-            <button className="flex justify-between items-center gap-3 bg-primary text-white py-3 px-6 rounded-lg font-bold font-EinaRegular  ">
-              <Image
-                src={"/asserts/googleplay.png"}
-                alt=""
-                width={20}
-                height={20}
-              />
-              <span>Get on Android</span>
-            </button>
-          </div>
-        </div>
-
-        <div className="relative ">
-          <div>
-            <Image
-              src="/asserts/woman.avif"
-              alt="woman"
-              width={500}
-              height={520}
-            />
-          </div>
-
-          <div className="absolute top-[8.5em] left-[-5em] ">
-            <Image
-              src="/asserts/safelockcard.avif"
-              alt=""
-              width={200}
-              height={100}
-              className=""
-            />
-          </div>
-
-          <div className="absolute top-[20em] left-[-5em] ">
-            <Image
-              src="/asserts/flexnairacard.avif"
-              alt=""
-              width={200}
-              height={100}
-              className=""
-            />
-          </div>
-
-          <div className="absolute top-[6em] right-[-2em] ">
-            <Image
-              src="/asserts/targetsavingscard.avif"
-              alt=""
-              width={200}
-              height={100}
-              className=""
-            />
-          </div>
-
-          <div className="absolute top-[20em] right-[-2em] ">
-            <Image
-              src="/asserts/investifycard.avif"
-              alt=""
-              width={200}
-              height={100}
-              className=""
-            />
-          </div>
-
-          <div className="absolute bottom-[-1.5em] left-[10em] ">
-            <Image
-              src="/asserts/piggybankcard.avif"
-              alt=""
-              width={200}
-              height={100}
-              className=""
-            />
-          </div>
+          <p className="flex gap-4 font-bold">
+            <BsArrowReturnRight size="20px" />
+            <span className="text-primary font-bold">
+              More on our security measures
+            </span>
+          </p>
         </div>
       </div>
-       {/* hero section end */}
+      {/*  */}
 
 
-       
+      
     </main>
   );
 }
