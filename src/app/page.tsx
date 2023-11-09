@@ -147,29 +147,45 @@ function Home() {
         <div className="text-center ">
           <h1 className="font-bold text-5xl">Meet Our Saver of the Month</h1>
           <div className="w-full flex justify-center">
-          <p className="py-4 text-2xl w-[60%] text-primary_text">
-          Every month, we shine a spotlight on one saver, asking them about their savings culture and how piggyvest has helped them.
-          </p>
+            <p className="py-4 text-2xl w-[60%] text-primary_text">
+              Every month, we shine a spotlight on one saver, asking them about
+              their savings culture and how piggyvest has helped them.
+            </p>
           </div>
         </div>
 
         <div className="flex justify-center pt-20 border-1">
-        <iframe width="50%" height="400" src="https://www.youtube.com/embed/8XzCzC9pFGM?si=ORP2XB5gzo36RrhY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-xl"></iframe>
+          <iframe
+            width="50%"
+            height="400"
+            src="https://www.youtube.com/embed/8XzCzC9pFGM?si=ORP2XB5gzo36RrhY"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="rounded-xl"
+          ></iframe>
         </div>
       </div>
       {/* Meet Our Saver of the Month end */}
 
-
       {/* success story */}
-      <div className="px-20 flex justify-center gap-10 items-center font-EinaBold ">
-        <aside>
-          <Image src={'/asserts/successStory.png'} alt="" height={500} width={550}/>
+      <div className="px-20 w-full flex justify-center gap-10 items-center font-EinaBold ">
+        <aside className="">
+          <Image
+            src={"/asserts/successStory.png"}
+            alt=""
+            height={400}
+            width={400}
+          />
           {/* apple-logo-black.svg */}
         </aside>
         <aside className="">
-          <h1 className="font-bold w-[80%] text-3xl text-left">Join 4+ million people who save and invest with us</h1>
+          <h1 className="font-bold w-[80%] text-3xl text-left">
+            Join 4+ million people who save and invest with us
+          </h1>
 
-          <div className="mt-8 flex  items-center gap-4">
+          <div className="mt-8 flex   items-center gap-4">
             <button className="flex justify-between items-center gap-3 border shadow-sm text-primary_text py-3 px-6 rounded-lg font-bold font-EinaRegular ">
               <Image
                 src={"/asserts/apple-logo-black.svg"}
@@ -193,6 +209,43 @@ function Home() {
         </aside>
       </div>
       {/* success story end */}
+
+      {/* featured in section */}
+      <div className="px-20 py-[9em]   mb-20">
+        <h1 className=" text-center font-bold text-3xl font-EinaRegular">
+          As featured in
+        </h1>
+
+        {/* comapny */}
+        <div className="flex justify-between w-full items-center">
+
+          <div>
+            <Image src={"/asserts/brand3.png"} alt="" width={150} height={100}/>
+          </div>
+
+          <div>
+            <Image src={"/asserts/brand2.png"} alt="" width={150} height={100}/>
+          </div>
+
+          <div>
+            <Image src={"/asserts/brand1.png"} alt="" width={150} height={100}/>
+          </div>
+
+          <div>
+            <Image src={"/asserts/brand4.svg"} alt="" width={100} height={100}/>
+          </div>
+
+          <div>
+            <Image src={"/asserts/brand5.svg"} alt="" width={150} height={100}/>
+          </div>
+
+          <div>
+            <Image src={"/asserts/brand6.svg"} alt="" width={70} height={70}/>
+          </div>
+        </div>
+      </div>
+
+      {/* featured in section  end*/}
     </main>
   );
 }
