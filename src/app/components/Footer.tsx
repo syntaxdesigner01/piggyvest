@@ -6,7 +6,12 @@ export default function Footer() {
       <section className="px-20 flex justify-between pt-20">
         {/* logo */}
         <div>
-          <Image src={"/asserts/logo2.svg"} alt="" width={150} height={150} />
+         <div>
+         <Image src={"/asserts/logo2.svg"} alt="" width={150} height={150} />
+         </div>
+         <div className="py-2 flex justify-center">
+         <Image src={"/asserts/ndprAuditjpeg.png"} alt="" width={100} height={100} />
+         </div>
         </div>
 
         {/* nav links */}
@@ -107,7 +112,15 @@ export default function Footer() {
         {/* bottom part footer */}
 
         <div className="px-20 py-10">
-        <hr color="black"  />
+        <hr className="border-t-2 text-black"  />
+
+        <div className=" font-extralight text-primary_text w-full py-10">
+            <p className="w-[50%] text-[10px]">Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 7 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.</p>
+
+            <p className="w-[30%] text-[10px] py-6">PV Capital Limited is a fund manager duly licensed by the Securities and Exchange Commission (SEC) of Nigeria.</p>
+
+            <p className="text-[10px] text-blue-600">2016 - 2023 PiggyTech Global Limited - RC 1405222</p>
+        </div>
         </div>
     </footer>
   );
