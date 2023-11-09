@@ -5,6 +5,7 @@ import { UiProviders } from "@/utils/chakraProviders";
 import { Provider } from "react-redux";
 import { store } from "@/redux/store/store";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           <UiProviders>
             <NavBar/>
             {children}
+            <Footer/>
             </UiProviders>
         {/* </Provider> */}
       </body>

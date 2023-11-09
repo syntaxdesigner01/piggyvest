@@ -211,7 +211,7 @@ function Home() {
       {/* success story end */}
 
       {/* featured in section */}
-      <div className="px-20 py-[9em]   mb-20">
+      <div className="px-20 pt-[9em]   mb-40">
         <h1 className=" text-center font-bold text-3xl font-EinaRegular">
           As featured in
         </h1>
