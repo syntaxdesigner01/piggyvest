@@ -11,3 +11,49 @@
   .scroll-shadow.scrolled {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+
+
+  /* Navbar.module.css */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color:white 
+}
+
+
+
+  .container {
+    position: relative;
+    overflow: hidden;
+    background-color: #ddd; 
+    transition: background-color 0.5s;
+  }
+  
+  .container:hover {
+    background-color: #aabbcc; 
+  }
+  
+  .image {
+    width: 100%; 
+    height: 100%; 
+    display: block; 
+  }
+  
+  .container .image {
+    transform: scale(0.8); 
+    opacity: 0; 
+    transition: transform 0.5s, 
+  }
+  
+  .container:hover .image {
+    transform: scale(1.2); 
+    opacity: 1;
+  }
+  

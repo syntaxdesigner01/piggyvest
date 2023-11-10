@@ -2,13 +2,30 @@
 import Link from "next/link";
 import "@/utils/font.css";
 import "../globals.css";
+import { useEffect, useState } from 'react';
 
 export default function NavBar() {
- 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
 
-     <section className="bg-white z-50 fixed w-full  py-4">
+     <section className={` z-50 navbar ${isScrolled ? 'scrolled' : ''}`}>
        <nav
       className={` px-20  flex justify-between pt-4 font-EinaBold font-bold text-[18px]  `}
     >
