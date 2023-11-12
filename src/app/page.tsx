@@ -12,13 +12,13 @@ function Home() {
       <HeroSection />
 
       {/*  */}
-      <div className="flex items-center gap-10 w-[70%] pt-[10em] px-20 ">
+      <div className="flex flex-col  items-center px-16   pt-[10em]  md:gap-8 lg:gap-10 lg:w-[70%]  md:flex-row lg:px-20 ">
         <div className="bg-white  p-6 rounded-[30px]">
           <BiSolidLock size="60px" />
         </div>
 
         <div>
-          <h1 className="font-[Eina-bold] text-primary font-bold text-3xl">
+          <h1 className="font-[Eina-bold] text-primary font-bold text-2xl text-center md:text-left md:text-3xl ">
             Your security is our priority
           </h1>
           <p className="py-6 leading-relaxed">
@@ -38,10 +38,10 @@ function Home() {
       {/*  */}
 
       {/* offered service card  */}
-      <div className=" px-20 pt-[10em] ">
-        <section className="flex justify-between mb-10">
+      <div className=" px-4 md:px-20 pt-[10em] ">
+        <section className="flex flex-col justify-between mt-6 lg:mb-10 lg:flex-row">
           <div className="text-center flex flex-row justify-center pt-20">
-            <div className="w-[65%] text-center ">
+            <div className="lg:w-[65%] text-center ">
               <h1 className="text-5xl font-bold leading-snug  ">
                 5 ways to build your savings
               </h1>
@@ -62,7 +62,7 @@ function Home() {
           />
         </section>
 
-        <section className="pt-[2em] flex justify-between items-center mb-10 gap-8">
+        <section className="flex-col pt-[2em] flex justify-between items-center mt-6 lg:mb-10 gap-8 lg:flex-row">
           <DetailCard
             title="Fixed Savings"
             description="Lock money away for a fixed duration without having access to it until maturity. It's like having a custom fixed deposit."
@@ -80,7 +80,7 @@ function Home() {
           />
         </section>
 
-        <section className="pt-[2em] flex justify-between items-center mb-10 gap-8">
+        <section className="flex-col pt-[2em] flex justify-between items-center mt-6 lg:mb-10 gap-8 lg:flex-row">
           <DetailCard
             title="Flex Naira"
             description="Save, transfer, manage, organise, and withdraw your money at any time.."
@@ -156,14 +156,14 @@ function Home() {
 
         <div className="flex justify-center pt-20 border-1">
           <iframe
-            width="50%"
-            height="400"
+    
+           
             src="https://www.youtube.com/embed/8XzCzC9pFGM?si=ORP2XB5gzo36RrhY"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="rounded-xl"
+            className="rounded-xl w-[99%] h-[200px]  md:w-[90%] lg:w-[50%] lg:h-[400px]  "
           ></iframe>
         </div>
       </div>

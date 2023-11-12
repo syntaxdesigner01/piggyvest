@@ -27,7 +27,7 @@ export default function NavBar() {
 
      <section className={` z-50 navbar ${isScrolled ? 'scrolled' : ''}`}>
        <nav
-      className={` px-20  flex justify-between pt-4 font-EinaBold font-bold text-[18px]  `}
+      className={` lg:px-20  flex justify-between pt-4 font-EinaBold font-bold text-[18px]  `}
     >
       <div className="flex items-center  gap-10 ">
         {/* logo */}
@@ -55,7 +55,7 @@ export default function NavBar() {
         </ul>
       </div>
 
-      <div className="">
+      <div className="hidden lg:flex">
         <button
           onClick={() => {}}
           className="border border-black mx-4 py-4 px-6 rounded-2xl "
@@ -68,6 +68,10 @@ export default function NavBar() {
         >
           Create free account
         </button>
+      </div>
+
+      <div className="lg:hidden">
+        Menu
       </div>
     </nav>
      </section>
