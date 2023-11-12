@@ -36,7 +36,7 @@ export default function NavBar() {
         </Link>
 
         {/* nav links */}
-        <ul className="flex  gap-6 pt-2 sm:mt-0 text-[#304558]   ">
+        <ul className="md:flex  gap-6 pt-2 sm:mt-0 text-[#304558]  hidden ">
           <li>
             <Link href="#about">Save</Link>
           </li>
@@ -55,7 +55,7 @@ export default function NavBar() {
         </ul>
       </div>
 
-      <div>
+      <div className="">
         <button
           onClick={() => {}}
           className="border border-black mx-4 py-4 px-6 rounded-2xl "

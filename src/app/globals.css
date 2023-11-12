@@ -27,22 +27,23 @@
   background-color:white 
 }
 
+/* navbar end */
 
 
   .container {
     position: relative;
     overflow: hidden;
-    background-color: #ddd; 
+    /* background-color: #ddd;  */
     transition: background-color 0.5s;
   }
   
-  .container:hover {
-    background-color: #aabbcc; 
-  }
+  /* .container:hover {
+    color: #fff; 
+  } */
   
   .image {
-    width: 100%; 
-    height: 100%; 
+    width: 250; 
+    height: 250; 
     display: block; 
   }
   
@@ -53,7 +54,7 @@
   }
   
   .container:hover .image {
-    transform: scale(1.2); 
+    transform: scale(1); 
     opacity: 1;
   }
   
