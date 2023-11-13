@@ -11,13 +11,13 @@ function Home() {
     <main className="pt-[14em] relative overflow-hidden">
       <HeroSection />
 
-      {/*  */}
-      <div className="flex flex-col  items-center px-16   pt-[10em]  md:gap-8 lg:gap-10 lg:w-[70%]  md:flex-row lg:px-20 ">
+      {/* Your security is our priority */}
+      <div className="flex flex-col  items-center pt-[10em]  md:gap-8 lg:gap-10 lg:w-[70%]  md:flex-row lg:px-20 ">
         <div className="bg-white  p-6 rounded-[30px]">
           <BiSolidLock size="60px" />
         </div>
 
-        <div>
+        <div className="pt-20 text-center  px-6 lg:text-left  ">
           <h1 className="font-[Eina-bold] text-primary font-bold text-2xl text-center md:text-left md:text-3xl ">
             Your security is our priority
           </h1>
@@ -35,7 +35,9 @@ function Home() {
           </p>
         </div>
       </div>
-      {/*  */}
+      {/*  Your security is our priority end*/}
+
+
 
       {/* offered service card  */}
       <div className=" px-4 md:px-20 pt-[10em] ">
@@ -103,26 +105,26 @@ function Home() {
       {/* Diverse ways to Invest */}
       <div className="py-[9em] mt-20 mb-20 bg-white ">
         <div className="text-center ">
-          <h1 className="font-bold text-5xl">Diverse ways to Invest</h1>
-          <p className="py-4 text-2xl text-primary_text">
+          <h1 className="font-bold text-3xl lg:text-5xl">Diverse ways to Invest</h1>
+          <p className="py-4 text-xl text-primary_text lg:text-2xl">
             Grow your money and invest for your future confidently.
           </p>
         </div>
 
-        <div className="lg:px-20  mt-10">
-          <section className=" bg-[#7913E5] rounded-[40px] pt-10 flex flex-col justify-between px-4 lg:flex-row  lg:px-10">
+        <div className=" lg:px-20 px-4 mt-10">
+          <section className=" bg-[#7913E5] overflow-hidden rounded-[40px] pt-10 flex flex-col justify-between px-4 lg:flex-row  lg:px-10">
             <aside className="text-white">
-              <h1 className="font-bold text-4xl pt-4">
+              <h1 className="font-bold  pt-4 text-center text-2xl lg:text-4xl lg:text-left">
                 Earn Up to 25% returns
               </h1>
-              <p className="py-10 w-full lg:w-[40%] leading-normal text-xl text-left font-light">
+              <p className="py-10 w-full lg:w-[40%] leading-normal text-xl text-center font-light lg:text-left">
                 Invest securely and confidently on the go. Grow your money
                 confidently by investing in pre-vetted investment
                 opportunities.zz
               </p>
 
               <div className=" w-full pt-10 ">
-                <div className="relative bottom-[-3em] flex gap-4 ">
+                <div className="relative bottom-4 left-20 flex gap-4 lg:bottom-[-3em] lg:left-4 ">
                   <BsArrowReturnRight size="20px" />
                   <span className="">Learn about Investments</span>
                 </div>
@@ -133,8 +135,9 @@ function Home() {
               <Image
                 src={"/asserts/iphoneInvest.avif"}
                 alt="iphoneInvest.avif"
-                width={700}
-                height={500}
+                width={650}
+                height={500} 
+                
               />
             </aside>
           </section>
@@ -143,7 +146,7 @@ function Home() {
       {/* Diverse ways to Invest end */}
 
       {/* Meet Our Saver of the Month */}
-      <div className="py-[9em]mt-10 lg:mt-20 mb-20">
+      <div className="py-[6em] px-2 lg:py-[9em] mt-10 lg:mt-20 mb-20">
         <div className="text-center ">
           <h1 className="font-bold text-3xl lg:text-5xl">Meet Our Saver of the Month</h1>
           <div className="w-full flex justify-center">
@@ -163,11 +166,13 @@ function Home() {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="rounded-xl w-[99%] h-[200px]  md:w-[90%] lg:w-[50%] lg:h-[400px]  "
+            className="rounded-xl w-[90%] h-[300px]  md:w-[90%] lg:w-[50%] lg:h-[400px]  "
           ></iframe>
         </div>
       </div>
       {/* Meet Our Saver of the Month end */}
+
+
 
       {/* success story */}
       <div className="px-4 w-full flex flex-col justify-center  gap-10 items-center font-EinaBold  lg:flex-row lg:px-20 ">
@@ -211,13 +216,13 @@ function Home() {
       {/* success story end */}
 
       {/* featured in section */}
-      <div className="px-2 lg:px-20 pt-[9em] mb-20  lg:mb-40">
+      <div className="px-4 lg:px-20 pt-[9em] mb-20  lg:mb-40">
         <h1 className=" text-center font-bold text-3xl font-EinaRegular">
           As featured in
         </h1>
 
         {/* comapny */}
-        <div className="flex gap-1 lg:justify-between w-full items-center">
+        <div className="grid grid-cols-2 pl-4 gap-10 mt-4  w-full lg:grid-cols-6 items-center justify-evenly lg:pl-0 lg:gap-4  lg:justify-between">
 
           <div>
             <Image src={"/asserts/brand3.png"} alt="" width={150} height={100}/>
