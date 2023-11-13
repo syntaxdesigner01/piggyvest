@@ -8,7 +8,7 @@ import Image from "next/image";
 
 function Home() {
   return (
-    <main className="pt-[14em] relative">
+    <main className="pt-[14em] relative overflow-hidden">
       <HeroSection />
 
       {/*  */}
