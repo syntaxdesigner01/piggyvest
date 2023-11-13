@@ -13,6 +13,7 @@ export default function NavBar() {
   const [showResource, setShowResource] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
+  
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setIsScrolled(true);
