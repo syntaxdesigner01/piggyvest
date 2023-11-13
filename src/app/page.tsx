@@ -109,13 +109,13 @@ function Home() {
           </p>
         </div>
 
-        <div className="px-20  mt-10">
-          <section className=" bg-[#7913E5] rounded-[40px] pt-10 flex justify-between  px-10">
+        <div className="lg:px-20  mt-10">
+          <section className=" bg-[#7913E5] rounded-[40px] pt-10 flex flex-col justify-between px-4 lg:flex-row  lg:px-10">
             <aside className="text-white">
               <h1 className="font-bold text-4xl pt-4">
                 Earn Up to 25% returns
               </h1>
-              <p className="py-10 w-[40%] leading-normal text-xl text-left font-light">
+              <p className="py-10 w-full lg:w-[40%] leading-normal text-xl text-left font-light">
                 Invest securely and confidently on the go. Grow your money
                 confidently by investing in pre-vetted investment
                 opportunities.zz
@@ -143,11 +143,11 @@ function Home() {
       {/* Diverse ways to Invest end */}
 
       {/* Meet Our Saver of the Month */}
-      <div className="py-[9em] mt-20 mb-20">
+      <div className="py-[9em]mt-10 lg:mt-20 mb-20">
         <div className="text-center ">
-          <h1 className="font-bold text-5xl">Meet Our Saver of the Month</h1>
+          <h1 className="font-bold text-3xl lg:text-5xl">Meet Our Saver of the Month</h1>
           <div className="w-full flex justify-center">
-            <p className="py-4 text-2xl w-[60%] text-primary_text">
+            <p className="py-4 text-xl lg:text-2xl w-full lg:w-[60%] text-primary_text">
               Every month, we shine a spotlight on one saver, asking them about
               their savings culture and how piggyvest has helped them.
             </p>
@@ -170,7 +170,7 @@ function Home() {
       {/* Meet Our Saver of the Month end */}
 
       {/* success story */}
-      <div className="px-20 w-full flex justify-center gap-10 items-center font-EinaBold ">
+      <div className="px-4 w-full flex flex-col justify-center  gap-10 items-center font-EinaBold  lg:flex-row lg:px-20 ">
         <aside className="">
           <Image
             src={"/asserts/successStory.png"}
@@ -181,12 +181,12 @@ function Home() {
           {/* apple-logo-black.svg */}
         </aside>
         <aside className="">
-          <h1 className="font-bold w-[80%] text-3xl text-left">
+          <h1 className="font-bold w-full lg:w-[80%] text-3xl text-center lg:text-left">
             Join 4+ million people who save and invest with us
           </h1>
 
-          <div className="mt-8 flex   items-center gap-4">
-            <button className="flex justify-between items-center gap-3 border shadow-sm text-primary_text py-3 px-6 rounded-lg font-bold font-EinaRegular ">
+          <div className="mt-8 flex justify-center items-center gap-2 lg:gap-4 lg:justify-start ">
+            <button className="flex lg:justify-between items-center border shadow-sm text-primary_text text-sm py-2 gap-1 lg:gap-3  lg:py-3 px-2 lg:px-6 rounded-lg font-bold font-EinaRegular ">
               <Image
                 src={"/asserts/apple-logo-black.svg"}
                 alt=""
@@ -196,7 +196,7 @@ function Home() {
               <span>Get on iPhone</span>
             </button>
 
-            <button className="flex justify-between items-center gap-3 border shadow-sm text-primary_text py-3 px-6 rounded-lg font-bold font-EinaRegular  ">
+            <button className="flex lg:justify-between  items-center border shadow-sm text-primary_text text-sm py-2 gap-1 lg:gap-3  lg:py-3 px-2 lg:px-6 rounded-lg font-bold font-EinaRegular ">
               <Image
                 src={"/asserts/googleplay.png"}
                 alt=""
@@ -211,13 +211,13 @@ function Home() {
       {/* success story end */}
 
       {/* featured in section */}
-      <div className="px-20 pt-[9em]   mb-40">
+      <div className="px-2 lg:px-20 pt-[9em] mb-20  lg:mb-40">
         <h1 className=" text-center font-bold text-3xl font-EinaRegular">
           As featured in
         </h1>
 
         {/* comapny */}
-        <div className="flex justify-between w-full items-center">
+        <div className="flex gap-1 lg:justify-between w-full items-center">
 
           <div>
             <Image src={"/asserts/brand3.png"} alt="" width={150} height={100}/>

@@ -2,10 +2,14 @@
 import Link from "next/link";
 import "@/utils/font.css";
 import "../globals.css";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showProduct, setShowProduct] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -16,65 +20,102 @@ export default function NavBar() {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
+    <>
+     <section className={` z-50 navbar ${isScrolled ? "scrolled" : ""}`}>
+      <nav
+        className={` lg:px-20  flex justify-between pt-4 font-EinaBold font-bold text-[18px]  `}
+      >
+        <div className="flex items-center  gap-10 ">
+          {/* logo */}
+          <Link href="/">
+            <img src={"logo.svg"} alt="Logo" />
+          </Link>
 
-     <section className={` z-50 navbar ${isScrolled ? 'scrolled' : ''}`}>
-       <nav
-      className={` lg:px-20  flex justify-between pt-4 font-EinaBold font-bold text-[18px]  `}
-    >
-      <div className="flex items-center  gap-10 ">
-        {/* logo */}
-        <Link href="/">
-          <img src={"logo.svg"} alt="Logo" />
-        </Link>
+          {/* nav links */}
+          <ul className="lg:flex  gap-6 pt-2 sm:mt-0 text-[#304558]  hidden ">
+            <li onMouseOver={()=> setShowProduct(true)} >
+              <Link href="#about">Save</Link>
 
-        {/* nav links */}
-        <ul className="md:flex  gap-6 pt-2 sm:mt-0 text-[#304558]  hidden ">
-          <li>
-            <Link href="#about">Save</Link>
-          </li>
-          <li>
-            <Link href="#services">Invest</Link>
-          </li>
-          <li>
-            <Link href="#contact">Stories</Link>
-          </li>
-          <li>
-            <Link href="#contact">FAQs</Link>
-          </li>
-          <li>
-            <Link href="#contact">Resources</Link>
-          </li>
-        </ul>
-      </div>
+              <div className={`absolute bottom-[-5.3em] bg-white px-10 py-2 shadow-sm rounded-sm ${showProduct ?'absolute' : 'hidden'}`} onMouseOut={()=> setShowProduct(false)}>
+                <div className="grid grid-cols-2 justify-between gap-6">
+                  <div className="flex gap-2 items-center">
+                    <Image src={'/asserts/googleplay.png'} alt="" width={15} height={15} />
+                    <p>Safelock</p>
+                  </div>
 
-      <div className="hidden lg:flex">
-        <button
-          onClick={() => {}}
-          className="border border-black mx-4 py-4 px-6 rounded-2xl "
-        >
-          Sign in
-        </button>
-        <button
-          onClick={() => {}}
-          className="border border-black  py-4 px-6 rounded-2xl bg-primary text-white"
-        >
-          Create free account
-        </button>
-      </div>
+                  <div className="flex gap-2 items-center">
+                    <Image src={'/asserts/googleplay.png'} alt="" width={15} height={15} />
+                    <p>Safelock</p>
+                  </div>
 
-      <div className="lg:hidden">
-        Menu
-      </div>
-    </nav>
-     </section>
+                  <div className="flex gap-2 items-center">
+                    <Image src={'/asserts/googleplay.png'} alt="" width={15} height={15} />
+                    <p>Safelock</p>
+                  </div>
 
+                  <div className="flex gap-2 items-center">
+                    <Image src={'/asserts/googleplay.png'} alt="" width={15} height={15} />
+                    <p>Safelock</p>
+                  </div>
+                 
+                  
+                </div>
+              </div>
+            </li>
+            <li>
+              <Link href="#services">Invest</Link>
+            </li>
+            <li>
+              <Link href="#contact">Stories</Link>
+            </li>
+            <li>
+              <Link href="#contact">FAQs</Link>
+            </li>
+            <li>
+              <Link href="#contact">Resources</Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="hidden lg:flex">
+          <button
+            onClick={() => {}}
+            className="border border-black mx-4 py-4 px-6 rounded-2xl "
+          >
+            Sign in
+          </button>
+          <button
+            onClick={() => {}}
+            className="border border-black  py-4 px-6 rounded-2xl bg-primary text-white"
+          >
+            Create free account
+          </button>
+        </div>
+
+        <button className="lg:hidden" onClick={()=> setShowMenu(!showMenu)}>Menu</button>
+
+      </nav>
+    </section>
+        <div className={`w-full h-[50vh] shadow-md top-20 z-50 bg-white overflow-y-auto ${showMenu ? 'fixed' : 'hidden'}`}>
+         <div className="flex flex-col justify-center items-center gap-8 py-8">
+         <p>hello</p>
+          <p>hello</p>
+          <p>hello</p>
+          <p>hello</p>
+          <p>hello</p>
+          <p>hello</p>
+          <p>hello</p>
+         </div>
+        </div>
+    </>
+   
   );
 }

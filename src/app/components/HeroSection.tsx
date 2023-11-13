@@ -15,8 +15,8 @@ export default function HeroSection() {
             goals by helping them save and invest with ease.
           </p>
 
-          <div className="mt-8 flex flex-col items-center gap-4 lg:flex-row">
-            <button className="flex justify-between items-center gap-3 bg-primary text-white py-3 px-20 lg:px-6 rounded-lg font-bold font-EinaRegular ">
+          <div className="mt-8 flex justify-center items-center gap-2 lg:gap-4 ">
+            <button className="flex justify-between items-center gap-3 bg-primary text-white text-sm py-2 lg:py-3 px-2 lg:px-6 rounded-lg font-bold font-EinaRegular ">
               <Image
                 src={"/asserts/applelogo.png"}
                 alt=""
@@ -26,7 +26,7 @@ export default function HeroSection() {
               <span>Get on iPhone</span>
             </button>
 
-            <button className="flex  justify-between items-center gap-3 bg-primary text-white py-3 px-20 lg:px-6 rounded-lg font-bold font-EinaRegular  ">
+            <button className="flex justify-between items-center gap-3 bg-primary text-white text-sm py-2 lg:py-3 px-2 lg:px-6 rounded-lg font-bold font-EinaRegular ">
               <Image
                 src={"/asserts/googleplay.png"}
                 alt=""

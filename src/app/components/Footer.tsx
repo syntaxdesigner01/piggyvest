@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="relative bottom-0 w-full ">
-      <section className="px-20 flex justify-between pt-20">
+      <section className="px-10 flex justify-between lg:pt-20 flex-col lg:flex-row lg:px-20">
         {/* logo */}
-        <div>
+        <div className="flex flex-col justify-start items-start mb-10">
          <div>
          <Image src={"/asserts/logo2.svg"} alt="" width={150} height={150} />
          </div>
@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
 
         {/* nav links */}
-        <div className="flex justify-between gap-20 font-light ">
+        <div className="grid grid-cols-2 gap-10 font-light lg:justify-between lg:grid-cols-3 lg:gap-20 ">
           {/* liink1  */}
           <div>
             <h1 className="font-bold">Products</h1>
@@ -51,8 +51,8 @@ export default function Footer() {
         </div>
 
         {/* address */}
-        <div className="">
-          <div className="flex justify-end items-center gap-4">
+        <div className="pt-10 ">
+          <div className="flex  gap-4 items-center justify-start lg:justify-end ">
             <div>
               <Image
                 src={"asserts/facebook.svg"}
@@ -95,7 +95,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="text-right font-light pt-4 text-sm">
+          <div className="text-left font-light pt-4 text-sm lg:text-right">
             <p>Tesmot house, Abdulrahman Okene close,</p>
             <p>Victoria Island, Lagos, Nigeria.</p>
 
@@ -111,13 +111,13 @@ export default function Footer() {
       </section>
         {/* bottom part footer */}
 
-        <div className="px-20 py-10">
+        <div className="px-4 lg:px-20 py-10">
         <hr className="border-t-2 text-black"  />
 
         <div className=" font-extralight text-primary_text w-full py-10">
-            <p className="w-[50%] text-[10px]">Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 7 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.</p>
+            <p className="w-full lg:w-[50%] text-[10px]">Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 7 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.</p>
 
-            <p className="w-[30%] text-[10px] py-6">PV Capital Limited is a fund manager duly licensed by the Securities and Exchange Commission (SEC) of Nigeria.</p>
+            <p className="w-full lg:w-[30%] text-[10px] py-6">PV Capital Limited is a fund manager duly licensed by the Securities and Exchange Commission (SEC) of Nigeria.</p>
 
             <p className="text-[10px] text-blue-600">2016 - 2023 PiggyTech Global Limited - RC 1405222</p>
         </div>

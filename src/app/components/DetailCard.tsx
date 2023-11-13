@@ -54,7 +54,7 @@ export default function DetailCard({
   return (
     <div
     id={`card${id}`}
-      className={`container pt-10 px-4  rounded-3xl w-full lg:px-10 lg:w-[50%] `}
+      className={`container pt-10 px-4  rounded-3xl w-full lg:px-10 lg:w-[50%] cursor-pointer `}
       style={color}
       onMouseOver={() =>
         setColor({
