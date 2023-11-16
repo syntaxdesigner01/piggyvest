@@ -6,10 +6,11 @@ import HeroSection from "./components/HeroSection";
 import DetailCard from "./components/DetailCard";
 import Image from "next/image";
 
+
 function Home() {
   return (
     <main className="pt-[14em] relative overflow-hidden">
-      <HeroSection />
+      <HeroSection/>
 
       {/* Your security is our priority */}
       <div className="flex flex-col  items-center pt-[10em]  md:gap-8 lg:gap-10 lg:w-[70%]  md:flex-row lg:px-20 ">

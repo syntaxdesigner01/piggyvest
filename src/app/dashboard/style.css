@@ -1,0 +1,6 @@
+.layout_bg{
+    background-image:url('/public/asserts/bg/img1.png'),url('/public/asserts/bg/img2.png'),url('/public/asserts/bg/img4.png'),url('/public/asserts/bg/img3.png');
+    background-position: left -1% top -15%, right -7.5% top -1%, left -5% bottom -10%, right -5% bottom -5%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 15%, 15%, 15%, 15%;
+}

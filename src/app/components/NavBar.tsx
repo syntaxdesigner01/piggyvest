@@ -244,13 +244,13 @@ export default function NavBar() {
         <div className="hidden lg:flex">
           <button
             onClick={() => {}}
-            className="border border-black mx-4 py-4 px-6 rounded-2xl "
+            className="border border-black mx-4 py-3 px-6 rounded-2xl "
           >
             Sign in
           </button>
           <button
             onClick={() => {}}
-            className="border border-black  py-4 px-6 rounded-2xl bg-primary text-white"
+            className="border border-black  py-3 px-6 rounded-2xl bg-primary text-white"
           >
             Create free account
           </button>
