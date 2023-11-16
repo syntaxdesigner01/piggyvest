@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Login() {
@@ -109,7 +108,7 @@ export default function Login() {
           </form>
         </div>
         <div className=" flex flex-col lg:gap-2 font-semibold items-center text-[14px] mt-4 text-white">
-          <Link href={'#'}>Don't have an account? Register</Link>
+          <Link href={'#'}>Don&apos;t have an account? Register</Link>
           <br />
           <Link href={'#'}>Forgot Password?</Link>
         </div>
