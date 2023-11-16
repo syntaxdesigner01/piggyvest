@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'EinaBold';
+  src: url('../fonts/Eina01-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'EinaRegular';
+  src: url('../fonts/Eina01-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'EinaSemiBold';
+  src: url('../fonts/Eina01-SemiBold.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'U8Regular';
+  src: url('../fonts/U8-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'karla';
+  src: url('../fonts/karla.woff2') format('woff')
+  
+}
+
 
 *{margin: 0; padding: 0;}
 

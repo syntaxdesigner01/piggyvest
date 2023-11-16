@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import "@/utils/font.css";
-import "../globals.css";
+import "@/app/globals.css";
 import { useEffect, useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";

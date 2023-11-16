@@ -18,9 +18,11 @@ const config: Config = {
         primary_text:'#3D4F60'
        } ,
        fontFamily:{
-        EinaRegular:['Eina-regular','sans-serif'],
-        EinaBold:['Eina-bold','sans-serif'],
-        EinaSemiBold:['Eina-SemiBold','sans-serif'],
+        EinaRegular:['EinaRegular','sans-serif'],
+        EinaBold:['EinaBold','sans-serif'],
+        EinaSemiBold:['EinaSemiBold','sans-serif'],
+        U8Regular:['U8Regular','sans-serif'],
+        karla:['karla','sans-serif'],
        }
     },
   },

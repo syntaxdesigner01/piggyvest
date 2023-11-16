@@ -1,10 +1,10 @@
-import "../app/globals.css";
+import "@/app/globals.css";
 import "@/utils/font.css";
 import { BiSolidLock } from "react-icons/bi";
 import { BsArrowReturnRight } from "react-icons/bs";
-import HeroSection from "./components/HeroSection";
-import DetailCard from "./components/DetailCard";
 import Image from "next/image";
+import HeroSection from "@/components/HeroSection";
+import DetailCard from "@/components/DetailCard";
 
 
 function Home() {
