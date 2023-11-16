@@ -13,7 +13,6 @@ export default function NavBar() {
   const [showResource, setShowResource] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
-  
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setIsScrolled(true);
@@ -58,7 +57,6 @@ export default function NavBar() {
                 onMouseOut={() => setShowProduct(false)}
               >
                 <div className="grid grid-cols-2 justify-between gap-10 w-full">
-
                   <div className="flex gap-2 items-center hover:bg-[#F2F7F8] p-1 rounded-xl group">
                     <Image
                       src={"/asserts/piggybank-icon.png"}
@@ -67,12 +65,15 @@ export default function NavBar() {
                       height={40}
                     />
                     <div>
-                      <p className="text-md font-semibold group-hover:text-[#0F60D6]">Piggybank</p>
-                      <p className="font-extralight text-xs">Automated Savings</p>
+                      <p className="text-md font-semibold group-hover:text-[#0F60D6]">
+                        Piggybank
+                      </p>
+                      <p className="font-extralight text-xs">
+                        Automated Savings
+                      </p>
                     </div>
                   </div>
 
- 
                   <div className="flex gap-2 items-center hover:bg-[#F2F7F8] p-1 rounded-xl group">
                     <Image
                       src={"/asserts/safelock-icon.png"}
@@ -81,12 +82,13 @@ export default function NavBar() {
                       height={40}
                     />
                     <div>
-                      <p className="text-md font-semibold group-hover:text-[#2295F2]">Safelock</p>
+                      <p className="text-md font-semibold group-hover:text-[#2295F2]">
+                        Safelock
+                      </p>
                       <p className="font-extralight text-xs">Fixed Savings</p>
                     </div>
                   </div>
 
- 
                   <div className="flex gap-2 items-center hover:bg-[#F2F7F8] p-1 rounded-xl group">
                     <Image
                       src={"/asserts/targets-icon.png"}
@@ -95,12 +97,15 @@ export default function NavBar() {
                       height={40}
                     />
                     <div>
-                      <p className="text-md font-semibold group-hover:text-[#59CC8D]">Target Savings</p>
-                      <p className="font-extralight text-xs">Goal-oriented Savings</p>
+                      <p className="text-md font-semibold group-hover:text-[#59CC8D]">
+                        Target Savings
+                      </p>
+                      <p className="font-extralight text-xs">
+                        Goal-oriented Savings
+                      </p>
                     </div>
                   </div>
 
- 
                   <div className="flex gap-2 items-center hover:bg-[#F2F7F8] p-1 rounded-xl group">
                     <Image
                       src={"/asserts/flex-naira-icon.png"}
@@ -109,12 +114,15 @@ export default function NavBar() {
                       height={40}
                     />
                     <div>
-                      <p className="text-md font-semibold group-hover:text-[#E5489B]">Flex Naira</p>
-                      <p className="font-extralight text-xs">Flexible Savings</p>
+                      <p className="text-md font-semibold group-hover:text-[#E5489B]">
+                        Flex Naira
+                      </p>
+                      <p className="font-extralight text-xs">
+                        Flexible Savings
+                      </p>
                     </div>
                   </div>
 
- 
                   <div className="flex gap-2 items-center hover:bg-[#F2F7F8] p-1 rounded-xl group">
                     <Image
                       src={"/asserts/flex-dollar-icon.png"}
@@ -127,8 +135,6 @@ export default function NavBar() {
                       <p className="font-extralight text-xs">Dollar Savings</p>
                     </div>
                   </div>
-
- 
                 </div>
               </div>
             </li>
@@ -153,7 +159,6 @@ export default function NavBar() {
                 onMouseOut={() => setShowResource(false)}
               >
                 <div className="grid grid-cols-2 justify-between gap-10 w-full">
-
                   <div className="flex gap-2 items-center hover:bg-[#F2F7F8] p-1 rounded-xl group">
                     <Image
                       src={"/asserts/blog.svg"}
@@ -162,12 +167,12 @@ export default function NavBar() {
                       height={40}
                     />
                     <div>
-                      <p className="text-sm font-EinaRegular font-light ">Blog</p>
-                     
+                      <p className="text-sm font-EinaRegular font-light ">
+                        Blog
+                      </p>
                     </div>
                   </div>
 
- 
                   <div className="flex gap-2 items-center hover:bg-[#F2F7F8] p-1 rounded-xl group">
                     <Image
                       src={"/asserts/report.svg"}
@@ -176,12 +181,12 @@ export default function NavBar() {
                       height={40}
                     />
                     <div>
-                      <p className="text-sm font-EinaRegular font-light ">Reports</p>
-                    
+                      <p className="text-sm font-EinaRegular font-light ">
+                        Reports
+                      </p>
                     </div>
                   </div>
 
- 
                   <div className="flex gap-2 items-center hover:bg-[#F2F7F8] p-1 rounded-xl group">
                     <Image
                       src={"/asserts/comics.svg"}
@@ -190,12 +195,12 @@ export default function NavBar() {
                       height={40}
                     />
                     <div>
-                      <p className="text-sm font-EinaRegular font-light ">Comics</p>
-                      
+                      <p className="text-sm font-EinaRegular font-light ">
+                        Comics
+                      </p>
                     </div>
                   </div>
 
- 
                   <div className="flex gap-2 items-center hover:bg-[#F2F7F8] p-1 rounded-xl group">
                     <Image
                       src={"/asserts/calculator.svg"}
@@ -204,12 +209,12 @@ export default function NavBar() {
                       height={40}
                     />
                     <div>
-                      <p className="text-sm font-EinaRegular font-light">Calculator</p>
-                     
+                      <p className="text-sm font-EinaRegular font-light">
+                        Calculator
+                      </p>
                     </div>
                   </div>
 
- 
                   <div className="flex gap-2 items-center hover:bg-[#F2F7F8] p-1 rounded-xl group">
                     <Image
                       src={"/asserts/newsletter.svg"}
@@ -218,7 +223,9 @@ export default function NavBar() {
                       height={40}
                     />
                     <div>
-                      <p className="text-sm font-EinaRegular font-light ">Newsletter</p>
+                      <p className="text-sm font-EinaRegular font-light ">
+                        Newsletter
+                      </p>
                     </div>
                   </div>
 
@@ -230,11 +237,11 @@ export default function NavBar() {
                       height={40}
                     />
                     <div>
-                      <p className="text-sm font-EinaRegular font-light ">Ebook</p>
+                      <p className="text-sm font-EinaRegular font-light ">
+                        Ebook
+                      </p>
                     </div>
                   </div>
-
- 
                 </div>
               </div>
             </li>
@@ -242,17 +249,13 @@ export default function NavBar() {
         </div>
 
         <div className="hidden lg:flex">
-          <button
-            onClick={() => {}}
-            className="border border-black mx-4 py-3 px-6 rounded-2xl "
-          >
-            Sign in
+          <button className="border border-black mx-4 py-3 px-6 rounded-2xl ">
+            <Link href={"/login"}> Sign in</Link>
           </button>
-          <button
-            onClick={() => {}}
-            className="border border-black  py-3 px-6 rounded-2xl bg-primary text-white"
-          >
-            Create free account
+
+
+          <button className="border border-black  py-3 px-6 rounded-2xl bg-primary text-white">
+            <Link href={'/register'}>Create free account</Link>
           </button>
         </div>
 

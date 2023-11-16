@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { Select } from '@chakra-ui/react'
+
 
 export default function Login() {
   return (
     <div className="h-screen w-screen flex justify-center items-center overflow-y-scroll overflow-x-hidden py-10
      lg:py-20">
-      <div className="w-full flex justify-center items-center flex-col pt-10 lg:pt-20">
+      <div className="w-full flex justify-center items-center flex-col  pt-[30em]">
         <div>
           <svg
             width="192"
@@ -61,10 +63,10 @@ export default function Login() {
         <div className="bg-white  mt-10 rounded-t-2xl px-4 rounded-r-2xl w-[95%] py-6 lg:py-8 lg:px-10 lg:w-[32%]">
           <div className="text-center">
             <h1 className="text-[#083E9E] text-2xl font-U8Regular font-semibold text-center">
-              Login to your account
+            Create a Secure Account
             </h1>
             <p className="text-karla text-primary_text text-sm">
-              Securely login to your PiggyVest
+            Welcome to the future of Savings & Investments
             </p>
           </div>
 
@@ -74,12 +76,43 @@ export default function Login() {
                 htmlFor=""
                 className="font-U8Regular text-[12px] font-semibold text-[#4A556D]"
               >
-                Email or Phone Number
+                Full Name
               </label>
               <br />
               <input
                 type="text"
                 className="bg-[#E8F0FE]  px-4 py-4 focus:outline-none w-full my-2 rounded-md"
+                placeholder="Full Name"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor=""
+                className="font-U8Regular text-[12px] font-semibold text-[#4A556D]"
+              >
+                Email Address
+              </label>
+              <br />
+              <input
+                type="email"
+                className="bg-[#E8F0FE]  px-4 py-4 focus:outline-none w-full my-2 rounded-md"
+                placeholder="Email Address"
+              />
+            </div>
+         
+
+            <div className="mt-4 lg:mt-8">
+              <label
+                htmlFor=""
+                className="font-U8Regular text-[12px] font-semibold text-[#4A556D]"
+              >
+                Phone Number
+              </label>
+              <br />
+              <input
+                type="tel"
+                className="bg-[#E8F0FE]  px-4 py-4 focus:outline-none w-full my-2 rounded-md"
+                placeholder="Phone Number"
               />
             </div>
 
@@ -94,23 +127,53 @@ export default function Login() {
               <input
                 type="password"
                 className="bg-[#E8F0FE]  px-4 py-4 focus:outline-none w-full my-2 rounded-md"
+                placeholder="Password"
               />
+            </div>
+
+            <div className="mt-4 lg:mt-8">
+              <label
+                htmlFor=""
+                className="font-U8Regular text-[12px] font-semibold text-[#4A556D]"
+              >
+                Referrer Phone or Promo Code (Optional)
+              </label>
+              <br />
+              <input
+                type="text"
+                className="bg-[#E8F0FE]  px-4 py-4 focus:outline-none w-full my-2 rounded-md"
+                placeholder="Referrer Phone or Code"
+              />
+            </div>
+
+
+            <div className="mt-4 lg:mt-8">
+                <Select placeholder="Click To Select" bg={'#E8F0FE'} py={4} h={'50px'} variant='outline'>
+                    <option value="Facebook">Facebook</option>
+                    <option value="">Twitter</option>
+                    <option value="">Instagram</option>
+                    <option value="">Friend/Family/Coworker Referral</option>
+                    <option value="">Google search</option>
+                    <option value="">Google playstore</option>
+                    <option value="">Online Blog</option>
+                    <option value="">Local Newspaper</option>
+                    <option value="">At An Event</option>
+                    <option value="">Other</option>
+                </Select>
             </div>
 
             <div className="mt-8">
               <button
                 type="submit"
-                className="bg-[#0D60D8] flex justify-center items-center w-full text-white py-3 font-bold font-U8Regular text-[14px] rounded-t-lg rounded-r-lg hover:bg-[#083E9E]"
+                className="bg-[#083E9E] flex justify-center items-center w-full text-white py-3 font-bold font-U8Regular text-[14px] rounded-t-lg rounded-r-lg hover:bg-blue-900"
               >
-                LOG IN
+                CREATE ACCOUNT
               </button>
             </div>
           </form>
         </div>
         <div className=" flex flex-col lg:gap-2 font-semibold items-center text-[14px] mt-4 text-white">
-          <Link href={'/register'}>Don&apos;t have an account? Register</Link>
-          <br />
-          <Link href={'#'}>Forgot Password?</Link>
+          <Link href={'/login'}>Already have an account? Log In</Link>
         </div>
       </div>
     </div>

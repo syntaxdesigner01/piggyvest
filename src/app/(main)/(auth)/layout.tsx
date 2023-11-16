@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import './style.css'
 import '@/app/globals.css'
+import { UiProviders } from "@/utils/chakraProviders";
+
+
 
 export const metadata: Metadata = {
   title: "PiggyVest | Dashboard",
@@ -15,7 +18,9 @@ export default function AuthLayout({
   return (
     <html lang="en">
       <body className="bg-[#062863] layout_bg">
+        <UiProviders>
             {children}
+        </UiProviders>
       </body>
     </html>
   );
