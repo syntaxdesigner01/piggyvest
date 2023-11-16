@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Select } from '@chakra-ui/react'
 
 
-export default function Login() {
+export default function Register() {
   return (
     <div className="h-screen w-screen flex justify-center items-center overflow-y-scroll overflow-x-hidden py-10
      lg:py-20">

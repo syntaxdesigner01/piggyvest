@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 
-export default function Login() {
+export default function ForgotPassword() {
   return (
-    <div className="h-screen w-screen flex justify-center items-center overflow-y-scroll overflow-x-hidden py-10
-     lg:py-20">
-      <div className="w-full flex justify-center items-center flex-col pt-10 lg:pt-20">
+    <div
+      className="h-screen w-screen flex justify-center items-center  py-10
+     "
+    >
+      <div className="w-full flex justify-center items-center flex-col pt-10 ">
         <div>
           <svg
             width="192"
@@ -61,10 +63,10 @@ export default function Login() {
         <div className="bg-white  mt-10 rounded-t-2xl px-4 rounded-r-2xl w-[95%] py-6 lg:py-8 lg:px-10 lg:w-[32%]">
           <div className="text-center">
             <h1 className="text-[#083E9E] text-2xl font-U8Regular font-semibold text-center">
-              Login to your account
+              Forgot Password
             </h1>
             <p className="text-karla text-primary_text text-sm">
-              Securely login to your PiggyVest
+              Enter your email to reset your password
             </p>
           </div>
 
@@ -74,26 +76,13 @@ export default function Login() {
                 htmlFor=""
                 className="font-U8Regular text-[12px] font-semibold text-[#4A556D]"
               >
-                Email or Phone Number
+                Email Address
               </label>
               <br />
               <input
-                type="text"
+                type="email"
                 className="bg-[#E8F0FE]  px-4 py-4 focus:outline-none w-full my-2 rounded-md"
-              />
-            </div>
-
-            <div className="mt-4 lg:mt-8">
-              <label
-                htmlFor=""
-                className="font-U8Regular text-[12px] font-semibold text-[#4A556D]"
-              >
-                Password
-              </label>
-              <br />
-              <input
-                type="password"
-                className="bg-[#E8F0FE]  px-4 py-4 focus:outline-none w-full my-2 rounded-md"
+                placeholder="e.g.john@gmail.com"
               />
             </div>
 
@@ -102,15 +91,13 @@ export default function Login() {
                 type="submit"
                 className="bg-[#0D60D8] flex justify-center items-center w-full text-white py-3 font-bold font-U8Regular text-[14px] rounded-t-lg rounded-r-lg hover:bg-[#083E9E]"
               >
-                LOG IN
+                RESET PASSWORD
               </button>
             </div>
           </form>
         </div>
         <div className=" flex flex-col lg:gap-2 font-semibold items-center text-[14px] mt-4 text-white">
-          <Link href={'/register'}>Don&apos;t have an account? Register</Link>
-          <br />
-          <Link href={'/forgotpassword'}>Forgot Password?</Link>
+          <Link href={"/login"}>Back to login</Link>
         </div>
       </div>
     </div>
